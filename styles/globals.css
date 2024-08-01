@@ -1,0 +1,78 @@
+html,body {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+#home-section {
+    min-height: 700px;
+}
+@media (min-width: 1524px) {
+    #home-section {
+        height: calc(100vh);
+    }
+}
+
+.overflow::-webkit-scrollbar {
+    width: 8px;
+}
+
+.overflow::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.overflow::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+textarea {
+    resize: none;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.breathing {
+    animation: breathing 2s infinite;
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+
+.shadow-hero-image {
+    -webkit-box-shadow: 10px 10px 48px -7px rgba(0,0,0,0.31);
+    -moz-box-shadow: 10px 10px 48px -7px rgba(0,0,0,0.31);
+    box-shadow: 10px 10px 48px -7px rgba(0,0,0,0.31);
+}
+
+.shadow-facts {
+    -webkit-box-shadow: -23px 21px 43px -17px rgba(0,0,0,0.28);
+    -moz-box-shadow: -23px 21px 43px -17px rgba(0,0,0,0.28);
+    box-shadow: -23px 21px 43px -17px rgba(0,0,0,0.28);
+}
+
+.shadow-card {
+    -webkit-box-shadow: 10px 10px 28px 3px rgba(0,0,0,0.13);
+    -moz-box-shadow: 10px 10px 28px 3px rgba(0,0,0,0.13);
+    box-shadow: 10px 10px 28px 3px rgba(0,0,0,0.13);
+}
+
+.shadow-opacity-image {
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
