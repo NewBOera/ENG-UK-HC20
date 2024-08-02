@@ -48,17 +48,17 @@
 
     <main>
         <!-- ? Home section -->
-        <section id="home-section" class="flex justify-center">
+        <section id="home-section" class="flex justify-center bg-cover bg-center bg-no-repeat bg-[url(./assets/Desktop/HERO+Modal/BgCircleHero.webp)]">
           <!-- ? navbar mobile -->
-          <header class="flex justify-center md:hidden fixed z-50 w-screen bg-[#000000BB] backdrop-blur-2xl">
+          <header class="flex justify-center md:hidden fixed z-50 w-screen bg-[#00000088] backdrop-blur-2xl">
             <nav class="flex w-full px-8 sm:px-8 sm:w-[640px] md:w-[768px] justify-between h-[80px] rounded-xl md:hidden">
-              <div class="text-lg flex gap-4 items-center">
+              <div class="text-lg flex gap-4 items-center text-white">
                 <a href="#contact-section">
                   <img class="object-contain w-8" src="./assets/logo_whiteandgreen.png" alt="Logo">
                 </a>
                 <span class="dyn-name font-semibold"></span>
               </div>
-              <img onclick="toggleMenu()" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDIwIDIwIj48cGF0aCBmaWxsPSIjMDAwMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDhhMSAxIDAgMCAxIDEtMWgxMC4zMDhhMSAxIDAgMSAxIDAgMkgzYTEgMSAwIDAgMS0xLTFtMC00YTEgMSAwIDAgMSAxLTFoMTRhMSAxIDAgMSAxIDAgMkgzYTEgMSAwIDAgMS0xLTFtMCA4YTEgMSAwIDAgMSAxLTFoMTRhMSAxIDAgMSAxIDAgMkgzYTEgMSAwIDAgMS0xLTFtMCA0YTEgMSAwIDAgMSAxLTFoMTAuMzA4YTEgMSAwIDEgMSAwIDJIM2ExIDEgMCAwIDEtMS0xIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="Menu Icon" class="menu-icon" id="menu-icon">
+              <img onclick="toggleMenu()" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDIwIDIwIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yIDhhMSAxIDAgMCAxIDEtMWgxMC4zMDhhMSAxIDAgMSAxIDAgMkgzYTEgMSAwIDAgMS0xLTFtMC00YTEgMSAwIDAgMSAxLTFoMTRhMSAxIDAgMSAxIDAgMkgzYTEgMSAwIDAgMS0xLTFtMCA4YTEgMSAwIDAgMSAxLTFoMTRhMSAxIDAgMSAxIDAgMkgzYTEgMSAwIDAgMS0xLTFtMCA0YTEgMSAwIDAgMSAxLTFoMTAuMzA4YTEgMSAwIDEgMSAwIDJIM2ExIDEgMCAwIDEtMS0xIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="Menu Icon" class="menu-icon" id="menu-icon">
             </nav>
             <div class="menu-container bg-blackPrimary" id="menu-container">
                 <div class="p-5">
@@ -78,8 +78,8 @@
           </header>
 
           <!-- ? Header section desktop-->
-          <header class="hidden bg-primary justify-center items-center md:flex fixed z-50 w-full bg-[#000000BB] backdrop-blur-2xl">
-            <nav class="flex w-full justify-between rounded-xl sm:px-8 lg:px-10 h-[80px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px]">
+          <header class="hidden bg-primary justify-center items-center md:flex fixed z-50 w-full bg-[#00000088] backdrop-blur-2xl">
+            <nav class="text-white flex w-full justify-between rounded-xl sm:px-8 lg:px-10 h-[80px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px]">
               <div class="flex items-center grow basis-0 gap-10">
                 <div class="font-normal text-lg flex items-center gap-4">
                   <a href="#contact-section"><img class="object-contain w-10" src="./assets/logo_whiteandgreen.png" alt="Logo"></a>
@@ -88,11 +88,11 @@
                 
               </div>
               
-              <ul class="font-medium text-accent flex gap-8 xl:gap-12 text-white">
+              <ul class="font-medium text-accent flex gap-8 xl:gap-12">
                 <li class="hover:text-greenPrimary transition-all duration-200"><a href="#home-section">Home</a></li>
                 <li class="hover:text-greenPrimary transition-all duration-200"><a href="#about-section">About us</a></li>
                 <li class="hover:text-greenPrimary transition-all duration-200"><a href="#hotels-section">Hotels</a></li>
-                <li class="hover:text-greenPrimary transition-all duration-200"><a href="#amenities-section">Amenities</a></li>
+                <li class="hover:text-greenPrimary transition-all duration-200 hidden lg:block"><a href="#amenities-section">Amenities</a></li>
                 <li class="hover:text-greenPrimary transition-all duration-200 hidden lg:block"><a href="#subscription-section">Suscribe</a></li>
               </ul>
 
@@ -107,7 +107,7 @@
             </nav>
           </header>
           <!-- ! Home content -->
-          <div class="flex flex-col h-[full] pt-[112px] sm:pt-[132px] lg:pt-[150px] 2xl:pt-[80px] px-4 sm:px-8 lg:px-10 gap-8 sm:gap-16 md:gap-10 sm:flex-col lg:flex-row sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px]">
+          <div class="text-white flex flex-col h-[full] pt-[112px] sm:pt-[132px] lg:pt-[150px] 2xl:pt-[80px] px-4 sm:px-8 lg:px-10 gap-8 sm:gap-16 md:gap-10 sm:flex-col lg:flex-row sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px]">
             <article class="flex flex-col gap-4 lg:w-7/12 lg:gap-8 lg:justify-center">
               <div>
                 <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl relative z-20 font-[Outfit]">
@@ -124,7 +124,7 @@
 
               <div>
                 <a href="#contact-section">
-                  <button class="font-[Outfit] border-2 border-blackPrimary font-semibold rounded-full py-3 px-10 hover:scale-95 transition-all duration-200">
+                  <button class="font-[Outfit] border-2 border-white font-semibold rounded-full py-3 px-10 hover:scale-95 transition-all duration-200">
                     Discover now
                   </button>
                 </a>
@@ -132,7 +132,7 @@
             </article>
 
             <article class="lg:w-5/12 flex justify-center items-center h-full">
-              <img class="sm:max-w-[500px] lg:max-w-[350px] xl:max-w-[550px] 2xl:max-w-[600px] object-contain shadow-hero-image h-max" src="./assets/Desktop/HERO+Modal/heroImg.webp" alt="Luxury hotel">
+              <img class="sm:max-w-[500px] lg:max-w-[350px] xl:max-w-[550px] 2xl:max-w-[600px] object-contain h-max" src="./assets/Desktop/HERO+Modal/heroImg.webp" alt="Luxury hotel">
             </article>
           </div>
         </section>
@@ -149,7 +149,7 @@
             <div class="flex flex-wrap justify-center gap-8 lg:gap-y-16">
               <article class="flex flex-col gap-4 w-[280px] sm:w-[450px] md:flex-row md:gap-6 md:items-center md:w-[600px] lg:w-full">
                 <div class="flex justify-center md:w-5/12">
-                  <img class="max-w-[280px] md:w-full" src="./assets/Desktop/NOSOTROS/nosIcon1.webp" alt="Man talking on the phone">
+                  <img class="max-w-[280px] md:w-full" src="./assets/Desktop/NOSOTROS/nos1.webp" alt="Man talking on the phone">
                 </div>
 
                 <div class="flex flex-col gap-2 md:w-7/12">
@@ -171,7 +171,7 @@
 
               <article class="flex flex-col gap-4 w-[280px] sm:w-[450px] md:flex-row md:gap-6 md:items-center md:w-[600px] lg:w-full">
                 <div class="flex justify-center md:w-5/12">
-                  <img class="max-w-[280px] md:w-full" src="./assets/Desktop/NOSOTROS/nosIcon1.webp" alt="Woman">
+                  <img class="max-w-[280px] md:w-full" src="./assets/Desktop/NOSOTROS/nos2.webp" alt="Woman">
                 </div>
 
                 <div class="flex flex-col gap-2 md:w-7/12">
@@ -192,7 +192,7 @@
 
               <article class="flex flex-col gap-4 w-[280px] sm:w-[450px] md:flex-row md:gap-6 md:items-center md:w-[600px] lg:w-full">
                 <div class="flex justify-center md:w-5/12">
-                  <img class="max-w-[280px] md:w-full" src="./assets/Desktop/NOSOTROS/nosIcon1.webp" alt="People group">
+                  <img class="max-w-[280px] md:w-full" src="./assets/Desktop/NOSOTROS/nos3.webp" alt="People group">
                 </div>
 
                 <div class="flex flex-col gap-2 md:w-7/12">
@@ -334,7 +334,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="Flexible Booking Options">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/nos1-1.webp" alt="Flexible Booking Options">
                   </div>
                   <h5 class="font-bold text-4xl">
                     01
@@ -355,7 +355,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="Convenience at Your Fingertips">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/nos2-1.webp" alt="Convenience at Your Fingertips">
                   </div>
                   <h5 class="font-bold text-4xl">
                     02
@@ -377,7 +377,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="Fitness">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/nos3-1.webp" alt="Fitness">
                   </div>
                   <h5 class="font-bold text-4xl">
                     03
@@ -400,7 +400,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="Indulge in Luxury">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/nos4-1.webp" alt="Indulge in Luxury">
                   </div>
                   <h5 class="font-bold text-4xl">
                     04
@@ -422,7 +422,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="Financial Convenience">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/nos4.webp" alt="Financial Convenience">
                   </div>
                   <h5 class="font-bold text-4xl">
                     05
@@ -444,7 +444,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="Efficient Customer Service">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/nos5.webp" alt="Efficient Customer Service">
                   </div>
                   <h5 class="font-bold text-4xl">
                     06
@@ -467,7 +467,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="Secure and Swift Transactions">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/nos6.webp" alt="Secure and Swift Transactions">
                   </div>
                   <h5 class="font-bold text-4xl">
                     07
@@ -488,7 +488,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="Exclusive Offers">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/nos7.webp" alt="Exclusive Offers">
                   </div>
                   <h5 class="font-bold text-4xl">
                     08
@@ -508,7 +508,7 @@
               </article>
             </div>
 
-            <article class="flex flex-col gap-3 bg-[url(./assets/Desktop/CONTACTO/ImgBannerDesktop.png)] bg-cover bg-center bg-no-repeat rounded-2xl shadow-facts py-10 px-5 lg:py-36">
+            <article class="flex flex-col gap-3 bg-[url(./assets/Desktop/AMENIDADES/BannerSupport.webp)] bg-cover bg-center bg-no-repeat rounded-2xl shadow-facts py-10 px-5 lg:py-36">
               <h2 class="font-semibold text-3xl md:text-4xl lg:text-5xl md:text-center text-white font-[Outfit]">
                 24/7 ONLINE SUPPORT. CONTACT US TODAY
               </h2>
@@ -531,7 +531,7 @@
             <div class="flex justify-center flex-wrap gap-12 lg:gap-20">
               <article class="h-[700px] w-[280px] bg-white rounded-3xl p-4">
                 <div class="h-[30%]">
-                  <img class="h-full w-full rounded-xl object-cover" src="./assets/Desktop/HOTELES/h1.webp" alt="Clermont Club">
+                  <img class="h-full w-full rounded-xl object-contain" src="./assets/Desktop/HOTELES/hotel1.webp" alt="Clermont Club">
                 </div>
                 <div class="h-[60%] flex flex-col justify-center gap-4 px-3">
                   <div>
@@ -574,7 +574,7 @@
 
               <article class="h-[700px] w-[280px] bg-white rounded-3xl p-4">
                 <div class="h-[30%]">
-                  <img class="h-full w-full object-cover" src="./assets/Desktop/HOTELES/h2.webp" alt="Hippodrome Casino">
+                  <img class="h-full w-full object-contain" src="./assets/Desktop/HOTELES/hotel2.webp" alt="Hippodrome Casino">
                 </div>
                 <div class="h-[60%] flex flex-col justify-center gap-4 px-3">
                   <div>
@@ -618,7 +618,7 @@
 
               <article class="h-[700px] w-[280px] bg-white rounded-3xl p-4">
                 <div class="h-[30%]">
-                  <img class="h-full w-full object-cover" src="./assets/Desktop/HOTELES/h3.webp" alt="Aspers Casino">
+                  <img class="h-full w-full object-contain" src="./assets/Desktop/HOTELES/hotel3.webp" alt="Aspers Casino">
                 </div>
                 <div class="h-[60%] flex flex-col justify-center gap-4 px-3">
                   <div>
@@ -661,7 +661,7 @@
 
               <article class="h-[700px] w-[280px] bg-white rounded-3xl p-4">
                 <div class="h-[30%]">
-                  <img class="h-full w-full object-cover" src="./assets/Desktop/HOTELES/h4.webp" alt="Genting Casino">
+                  <img class="h-full w-full object-contain" src="./assets/Desktop/HOTELES/hotel4.webp" alt="Genting Casino">
                 </div>
                 <div class="h-[60%] flex flex-col justify-center gap-4 px-3">
                   <div>
@@ -703,7 +703,7 @@
 
               <article class="h-[700px] w-[280px] bg-white rounded-3xl p-4">
                 <div class="h-[30%]">
-                  <img class="h-full w-full object-cover" src="./assets/Desktop/HOTELES/h5.webp" alt="ALEA Nottingham">
+                  <img class="h-full w-full object-contain" src="./assets/Desktop/HOTELES/hotel5.webp" alt="ALEA Nottingham">
                 </div>
                 <div class="h-[60%] flex flex-col justify-center gap-4 px-3">
                   <div>
@@ -745,7 +745,7 @@
 
               <article class="h-[700px] w-[280px] bg-white rounded-3xl p-4">
                 <div class="h-[30%]">
-                  <img class="h-full w-full object-cover" src="./assets/Desktop/HOTELES/h5.webp" alt="Rainbow Casino">
+                  <img class="h-full w-full object-contain" src="./assets/Desktop/HOTELES/hotel6.webp" alt="Rainbow Casino">
                 </div>
                 <div class="h-[60%] flex flex-col justify-center gap-4 px-3">
                   <div>
@@ -805,7 +805,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="Money">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/TRAVELING-ADVICES/adv1.webp" alt="Money">
                   </div>
                   <h5 class="font-bold text-4xl">
                     01
@@ -827,7 +827,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="Clock">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/TRAVELING-ADVICES/adv2.webp" alt="Clock">
                   </div>
                   <h5 class="font-bold text-4xl">
                     02
@@ -848,7 +848,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="Fitness">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/TRAVELING-ADVICES/adv3.webp" alt="Fitness">
                   </div>
                   <h5 class="font-bold text-4xl">
                     03
@@ -869,7 +869,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="ATM">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/TRAVELING-ADVICES/adv4.webp" alt="ATM">
                   </div>
                   <h5 class="font-bold text-4xl">
                     04
@@ -890,7 +890,7 @@
               <article class="rounded-2xl bg-yellowPrimary flex flex-col gap-5 p-6 max-w-[260px] sm:min-w-[300px] md:min-w-[330px] bg-white">
                 <div class="flex items-center justify-between">
                   <div class="bg-greenPrimary flex justify-center items-center p-4 rounded-xl">
-                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/AMENIDADES/am1.webp" alt="Diamond">
+                    <img class="w-[30px] h-[30px] object-contain" src="./assets/Desktop/TRAVELING-ADVICES/Vector.png" alt="Diamond">
                   </div>
                   <h5 class="font-bold text-4xl">
                     05
@@ -933,8 +933,8 @@
               </div>
             </article>
 
-            <article class="bg-greenPrimary rounded-b-2xl lg:rounded-bl-none lg:rounded-r-2xl flex justify-center lg:w-6/12">
-              <img class="max-w-[300px] lg:max-w-[500px]" src="./assets/Desktop/CONTACTO/ManNewspaper.webp" alt="Woman wearing an tablet">
+            <article class="bg-greenPrimary rounded-b-2xl py-8 lg:rounded-bl-none lg:rounded-r-2xl flex justify-center lg:w-6/12">
+              <img class="max-w-[300px] object-contain lg:max-w-[400px]" src="./assets/Desktop/CONTACTO/womanContact.webp" alt="Woman wearing an tablet">
             </article>
           </div>
         </section>
